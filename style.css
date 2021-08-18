@@ -1,0 +1,127 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body
+{
+    width: 100vw;
+    height:100vh;
+    background-color: rgb(243, 233, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music-container
+{
+    border-radius: 5px;
+    width: 210px;
+    height: 350px;
+    box-shadow: 2px 2px 5px rgb(155, 145, 155),
+    -2px -2px 1px 3px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.music-info
+{
+    position: relative;
+    
+}
+.music-info > h4
+{
+    color:rgb(77, 75, 77)
+}
+.music-container > h4
+{
+    position: relative;
+    top:-25px;
+    color:rgb(155, 145, 155);
+}
+.music-image
+{
+    position: relative;
+    top:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px grey,
+    -2px -2px 3px 2px rgb(255, 255, 255);
+    /*box shadow:-2px -2px 3px 2px blue;
+                 offsetX offsetY blurradius spreadradius color */ 
+}
+.music-image img
+{ 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px white,
+    -2px -2px 1px 3px rgb(187, 186, 186);
+}
+.controls
+{
+    position: relative;
+    top:30px;
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls button
+{
+    outline: none;
+    border:none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 5px white,
+        2px 2px 5px rgb(187, 186, 186),
+        inset 0px 0px 2px rgb(187, 186, 186);
+}
+.pause #pause
+{
+    display: none;
+}
+.pause #play
+{
+    color:rgb(247, 149, 165);
+}
+.progressBar
+{
+    position: relative;
+    top:13px;
+    width:170px;
+    height: 7px;
+    box-shadow: inset 1px 1px 4px white,
+    inset -1px 1px 2px grey;
+    border-radius: 5px;
+}
+.progress
+{
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(247, 149, 165);
+    position: relative;
+}
+.progress::before
+{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:rgb(243, 233, 235);
+    box-shadow: -1px -1px 2px white,
+    1px 1px 2px grey;
+    top:50%;
+    transform: translateY(-50%);
+    right: 0;
+
+}
+

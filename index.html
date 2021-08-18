@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/31efa13219.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+    <div class = "music-container">
+        <h4>Now Playing</h4>
+        <div class = "music-image">
+            <img>
+        </div>
+        <div class = "music-info">
+            <h4 class = "title">Namo</h4>
+        </div>
+        <audio type = "mp3"></audio>
+        <div class = "music-controls">
+            <div class = "progressBar">
+                <div class = "progress"></div>
+            </div>
+            <div class = controls>
+                <button class = "back">
+                    <i class="fa fa-backward"></i>
+                </button>
+                <button class = "pause">
+                    <i class="fa fa-pause" id = "pause"></i>
+                    <i class = "fa fa-play" id = "play"></i>
+                </button>
+                <button class = "forw">
+                    <i class="fa fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
