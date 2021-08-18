@@ -63,6 +63,17 @@ body
     box-shadow: 2px 2px 5px white,
     -2px -2px 1px 3px rgb(187, 186, 186);
 }
+@keyframes rot
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {   
+        transform: rotate(360deg);
+    }
+}
 .controls
 {
     position: relative;
