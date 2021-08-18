@@ -64,6 +64,7 @@ function pauseSong()
         musicContainer.classList.remove("pause")
         pauseIcon.style.display = "block"
         playIcon.style.display = "none"
+        image.style.animation = "rot 15s linear infinite"
     }
     else
     {
@@ -72,6 +73,7 @@ function pauseSong()
         playIcon.style.display = "block"
         pauseIcon.style.display = "none"
         musicInfo.style.opacity = "0.3"
+        image.style.animation = ""
     }
 }
 function progressCheck(e)
